@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+import colors as c
+
+print(c.yellow + '''
+welcome to the magic eight ball!
+''')
+answers = [
+    'yes',
+    'no',
+    'maybe',
+    'better not tell you now',
+    'reply hazy try again',
+    'outlook not good',
+    'it is decidedly so',
+    'ask me later'
+]
+
+while True:
+   question = input(c.blue + '> '+ c.cyan)
+   import random
+   answer = random.choice(answers)
+   print(answer)
+
+
+
+
+
+
+
+
+
